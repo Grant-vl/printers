@@ -9,8 +9,8 @@ function Navbar () {
     return(
         <Header style={{height: '8vh', width: '100vw', padding:'0'}}>
             <Menu theme="dark" mode="horizontal" style={{height: '100%'}}>
-                <Link href="/">
-                    <p style={{ paddingLeft:'5%', color: 'white', fontSize: '1.7rem'}}>Printer App</p>
+                <Link href="/" >
+                    <p style={{ paddingLeft:'5%', color: 'white', fontSize: '2rem',margin: 'auto', marginLeft:'0'}}>Printer App</p>
                 </Link>
             </Menu>
         </Header>
