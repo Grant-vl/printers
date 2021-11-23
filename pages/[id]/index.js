@@ -143,8 +143,8 @@ const EditPrinter = ({printer}) => {
 };
 
 EditPrinter.getInitialProps = async ({query: { id }}) => {
-    // const res = await fetch(`https://arci-admin-dev.vercel.app/api/Merchant/${id}`)
-    const res = await fetch(`http://localhost:3000/api/Printer/${id}`);
+    const res = await fetch(`https://printers-nextjs.vercel.app/api/Printer/${id}`)
+    // const res = await fetch(`http://localhost:3000/api/Printer/${id}`);
     const data = await res.json();
 
     return { printer: data.body }

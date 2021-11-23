@@ -119,8 +119,8 @@ export default function Home({printer}) {
 };
 
 Home.getInitialProps = async () => {
-  // const res = await fetch('https://arci-admin-dev.vercel.app/api/Merchant');
-  const res = await fetch('http://localhost:3000/api/Printer');
+  const res = await fetch('https://printers-nextjs.vercel.app/api/Printer');
+  // const res = await fetch('http://localhost:3000/api/Printer');
   const { data } = await res.json();
 
   return { printer: data };

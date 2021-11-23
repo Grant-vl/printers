@@ -25,7 +25,7 @@ function CreatePrinter () {
         try {
             // const res = await fetch('https://arci-admin.vercel.app/api/Merchant', {
                 //     const res = await fetch('https://arci-admin-dev.vercel.app/api/Merchant', {
-                const res = await fetch(`http://localhost:3000/api/Printer`, {
+                const res = await fetch(`/api/Printer`, {
                 method: 'POST',
                 headers: {
                     "Accept": "application/json",
