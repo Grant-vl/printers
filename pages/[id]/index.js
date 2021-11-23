@@ -61,7 +61,6 @@ const EditPrinter = ({printer}) => {
         })
     }
 
-
     const validate = () => {
 
         console.log("Validate");
@@ -136,15 +135,13 @@ const EditPrinter = ({printer}) => {
                                 <Button htmlType="submit" type="primary">Update</Button>
                         </Form>
                 }
-
             </div>
         </div>
     )
 };
 
 EditPrinter.getInitialProps = async ({query: { id }}) => {
-    const res = await fetch(`https://printers-nextjs.vercel.app/api/Printer/${id}`)
-    // const res = await fetch(`http://localhost:3000/api/Printer/${id}`);
+    const res = await fetch(`https://printers-nextjs.vercel.app/api/Printer/${id}`);
     const data = await res.json();
 
     return { printer: data.body }

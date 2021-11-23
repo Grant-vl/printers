@@ -16,7 +16,7 @@ const PrinterSchema = new mongoose.Schema({
         required: [true, 'Please add an IP address'],
         unique: false,
         trim: true,
-        maxlength: [60, 'IP cannot be more than 10 characters']
+        maxlength: [20, 'IP cannot be more than 20 characters']
     },
     status: {
         type: Boolean,
