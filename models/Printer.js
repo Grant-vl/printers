@@ -23,7 +23,6 @@ const PrinterSchema = new mongoose.Schema({
         required: [true, 'Please add a description'],
         unique: false,
     }
-
 })
 
 module.exports = mongoose.models.Printer || mongoose.model('Printer', PrinterSchema)
